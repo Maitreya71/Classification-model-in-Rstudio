@@ -37,7 +37,7 @@ Libraries Used:
  -corrplot – for PCA and correlation analysis
 
 **🧹 Data Processing Steps:**
-**Data Import: Parsed large JSON Yelp dataset using jsonlite::fromJSON()**
+**Data Import:Parsed large JSON Yelp dataset using jsonlite::fromJSON()**
 
 **Data Cleaning:**
 
