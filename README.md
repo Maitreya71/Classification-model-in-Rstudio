@@ -9,13 +9,13 @@ Size: Includes thousands of restaurant records across different cuisines and loc
 
 Key Features:
 
-Cuisine Type
+ -Cuisine Type
 
-Restaurant Ratings
+ -Restaurant Ratings
 
-Location (City)
+ -Location (City)
 
-Review Counts
+ -Review Counts
 
 Other metadata like attributes and categories
 
@@ -26,62 +26,62 @@ IDE: RStudio
 
 Libraries Used:
 
-jsonlite – for importing JSON data
+ -jsonlite – for importing JSON data
 
-dplyr, tidyr – for data cleaning & manipulation
+ -dplyr, tidyr – for data cleaning & manipulation
 
-ggplot2 – for data visualization
+ -ggplot2 – for data visualization
 
-caret, randomForest – for modeling
+ -caret, randomForest – for modeling
 
-factoextra, corrplot – for PCA and correlation analysis
+ -corrplot – for PCA and correlation analysis
 
 **🧹 Data Processing Steps**
-Data Import: Parsed large JSON Yelp dataset using jsonlite::fromJSON().
+**Data Import: Parsed large JSON Yelp dataset using jsonlite::fromJSON()**
 
-Data Cleaning:
+**Data Cleaning**:
 
-Removed nulls and irrelevant attributes
+ -Removed nulls and irrelevant attributes
 
-Filtered dataset to focus on food-related businesses
+ -Filtered dataset to focus on food-related businesses
 
-Data Preprocessing:
+ -Data Preprocessing:
 
-Converted categorical variables to factors
+ -Converted categorical variables to factors
 
-Normalized and scaled numerical features
+ -Normalized and scaled numerical features
 
-Feature Engineering:
+**Feature Engineering**:
 
-Created new columns (e.g., binary flag for cuisine authenticity)
+ -Created new columns (e.g., binary flag for cuisine authenticity)
 
-Selected features based on business rules and correlation
+ -Selected features based on business rules and correlation
 
 **📊 Exploratory Data Analysis (EDA)**
-Visualized distribution of ratings and review counts across cities and cuisine types
+ -Visualized distribution of ratings and review counts across cities and cuisine types
 
-Generated correlation matrices to identify multicollinearity
+ -Generated correlation matrices to identify multicollinearity
 
-Performed Principal Component Analysis (PCA) to reduce dimensionality and eliminate redundant variables
+ -Performed Principal Component Analysis (PCA) to reduce dimensionality and eliminate redundant variables
 
 **🧠 Model Building**
-Split dataset into training, validation, and testing sets
+ -Split dataset into training, validation, and testing sets
 
-Chose Random Forest as the primary classifier for its performance on categorical features and interpretability
+ -Chose Random Forest as the primary classifier for its performance on categorical features and interpretability
 
 Input Features:
 
-Cuisine type
+ -Cuisine type
 
-Rating
+ -Rating
 
-City
+ -City
 
-Review count, etc.
+ -Review count, etc.
 
-Output Target:
+ -Output Target:
 
-Authentic vs Non-authentic cuisine flag
+ -Authentic vs Non-authentic cuisine flag
 
 **✅ Evaluation Metrics**
 Accuracy
